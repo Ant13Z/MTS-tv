@@ -1,9 +1,9 @@
-How to install it
+How to install it  
 
-git pull https://github.com/Ant13Z/MTS-tv.git .
-docker build -t test-assignment-300121 .
-docker run --rm -it -p 8080:8080 -v $(pwd):/front test-assignment-300121 sh
-yarn start
+git pull https://github.com/Ant13Z/MTS-tv.git .  
+docker build -t test-assignment-300121 .  
+docker run --rm -it -p 8080:8080 -v $(pwd):/front test-assignment-300121 sh  
+yarn start  
 go to localhost:8080
 
 Notes:
