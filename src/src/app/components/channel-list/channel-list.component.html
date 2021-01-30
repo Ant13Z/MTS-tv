@@ -1,0 +1,10 @@
+<h2>40 каналов</h2>
+<ul class="channel-list">
+    <li *ngFor="let channel of this.channelList" class="channel-list__item">
+        <channel-item [channel]="channel"></channel-item>
+    </li>
+</ul>
+<a class="show-more" (click)="this.getMore()" *ngIf="this.shift < this.channelCount">
+    <i class="show-more__icon"></i>
+    <span class="show-more__text">Показать еще</span>
+</a>

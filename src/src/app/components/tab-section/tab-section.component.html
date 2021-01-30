@@ -1,0 +1,17 @@
+<menu class="tab-section">
+    <li class="tab-section__item"
+        [ngClass]="{'tab-section__item--selected': this.activeTab === this.tabModel.first}"
+        (click)="this.changeTab(this.tabModel.first)">
+        First
+    </li>
+    <li class="tab-section__item"
+        [ngClass]="{'tab-section__item--selected': this.activeTab === this.tabModel.second}"
+        (click)="this.changeTab(this.tabModel.second)">
+        Second
+    </li>
+    <li class="tab-section__item"
+        [ngClass]="{'tab-section__item--selected': this.activeTab === this.tabModel.tvs}"
+        (click)="this.changeTab(this.tabModel.tvs)">
+        Телеканалы
+    </li>
+</menu>

@@ -1,0 +1,10 @@
+<div class="channel"
+     [ngStyle]="{'background-image': 'url(/assets/images/no-img.png), url(' + this.channel.picture.backgrounds[0] + ')'}"
+     (click)="this.showDescription($event)"
+     (mouseleave)="this.hideDescriptions()">
+    <div class="channel__description">
+        <img class="channel__description-logo" [src]="this.channel.picture.channelBlackWhites[0]" alt="">
+        <h4 class="channel__description-title">{{this.channel.name}}</h4>
+        <p class="channel__description-text">{{this.channel.introduce}}</p>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.tab-section {
+    display: table-row;
+
+    &__item {
+        //font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        width: 160px;
+        height: 36px;
+        cursor: pointer;
+
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &__item:hover {
+        color: #BA9D5A;
+    }
+
+    &__item--selected {
+        box-shadow: 0 2px 0 0 #BA9D5A;
+    }
+}

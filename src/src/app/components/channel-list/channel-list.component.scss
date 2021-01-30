@@ -1,0 +1,63 @@
+h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin-top: 20px;
+    height: 36px;
+}
+
+.channel-list {
+    $columnSize: 160px;
+
+    display: grid;
+    row-gap: 23px;
+    column-gap: 16px;
+    grid-template-rows: 96px;
+
+    @media (min-width: 320px) {
+        grid-template-areas: "li li";
+        grid-template-columns: $columnSize $columnSize;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-areas: "li li li li";
+        grid-template-columns: $columnSize $columnSize $columnSize $columnSize;
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-areas: "li li li li li li";
+        grid-template-columns: $columnSize $columnSize $columnSize $columnSize $columnSize $columnSize;
+    }
+}
+
+.show-more {
+    width: 93px;
+    height: 60px;
+    display: block;
+    margin: 20px auto 0;
+    cursor: pointer;
+
+    &__icon {
+        background-image: url('~/src/assets/icons/show-more__icon.svg');
+        background-size: cover;
+        transform: rotate(-44.91deg);
+        width: 27px;
+        height: 27px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__text {
+        display: block;
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: rgba(232, 249, 255, 0.4);
+    }
+}
